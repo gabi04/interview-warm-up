@@ -1,0 +1,44 @@
+.home__wrapper {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/Vintage.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-color: #482e1d;
+  color: #f0daa3;
+  text-align: center;
+}
+
+.home__title {
+  font-size: 72px;
+  font-family: GreyQo;
+}
+
+.home__button {
+  background-color: #f0daa3;
+  border: none;
+  width: 300px;
+  height: 80px;
+  font-size: 40px;
+  border-radius: 8px;
+  color: #482e1d;
+  font-family: GreyQo;
+}
+
+.home__button:hover {
+  opacity: 0.8;
+}
+
+.home__link {
+  // color: #895d2b;
+  //color: #a3966a;
+  //color: #482e1d;
+  text-decoration: underline;
+}
+
+.home__wrapper__two {
+}

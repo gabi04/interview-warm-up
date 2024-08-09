@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: DancingScript;
+}
+
+//TODO aterrizat los botones
+//TODO hover de los botones
+//TODO craer archivo solo para botones y crear archivo solo para colores
+button,
+a {
+  cursor: pointer;
+  font-family: DancingScript;
+}
+
+.primary-btn {
+  border: 1px solid #482e1d;
+  color: #482e1d;
+  border-radius: 4px;
+}
+
+.secondary-btn {
+  background-color: #f0daa3;
+  border: 1px solid #482e1d;
+  color: #f0daa3;
+  border-radius: 4px;
+}
+
+@font-face {
+  font-family: GreyQo;
+  src: url("./assets/fonts/GreyQo-Regular.ttf");
+}
+
+@font-face {
+  font-family: DancingScript;
+  src: url("./assets/fonts/DancingScript-VariableFont_wght.ttf");
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+}
