@@ -1,15 +1,4 @@
 .home__wrapper {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("/assets/Vintage.jpeg");
-  background-size: contain;
-  background-position: center;
-  background-color: #482e1d;
-  color: #f0daa3;
   text-align: center;
 }
 
@@ -34,11 +23,5 @@
 }
 
 .home__link {
-  // color: #895d2b;
-  //color: #a3966a;
-  //color: #482e1d;
   text-decoration: underline;
-}
-
-.home__wrapper__two {
 }
