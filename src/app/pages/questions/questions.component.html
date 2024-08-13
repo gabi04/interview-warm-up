@@ -1,1 +1,15 @@
-<p>questions works!</p>
+<div>
+  <h1>{{ questions[currentIndex].text }}</h1>
+  <div class="questions__buttons-wrapper">
+    <button
+      class="primary-btn"
+      (click)="onLastClick()"
+      [disabled]="lastIndex === 0"
+    >
+      Anterior
+    </button>
+    <button class="primary-btn" (click)="onNextClick()">Siguiente</button>
+  </div>
+</div>
+
+<!-- TODO fichero de traducciones -->
