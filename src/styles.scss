@@ -1,45 +1,39 @@
+@import "styles/settings/_button";
+@import "styles/settings/_colors";
+@import "styles/settings/_fonts";
+
 body {
   margin: 0;
-  font-family: DancingScript;
-}
-
-//TODO aterrizat los botones
-//TODO hover de los botones
-//TODO craer archivo solo para botones y crear archivo solo para colores
-button,
-a {
-  cursor: pointer;
-  font-family: DancingScript;
-}
-
-.primary-btn {
-  border: 1px solid #482e1d;
-  color: #482e1d;
-  border-radius: 4px;
-}
-
-.secondary-btn {
-  background-color: #f0daa3;
-  border: 1px solid #482e1d;
-  color: #f0daa3;
-  border-radius: 4px;
-}
-
-@font-face {
   font-family: GreyQo;
-  src: url("./assets/fonts/GreyQo-Regular.ttf");
+  background-color: $sand-storm;
+  height: 100vh;
+  width: 100vw;
 }
 
-@font-face {
-  font-family: DancingScript;
-  src: url("./assets/fonts/DancingScript-VariableFont_wght.ttf");
+app-root {
+  height: inherit;
+  width: inherit;
+  display: block;
 }
 
-h1 {
-  font-weight: 400;
+app-home {
+  margin: 0;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/Vintage.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-color: $espresso;
+  color: $sand-storm;
 }
 
-h2,
-h3 {
-  font-weight: normal;
+app-questions {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
