@@ -1,10 +1,10 @@
-<div>
+<div class="questions-wrapper">
   <h1>{{ questions[currentIndex].text }}</h1>
   <div class="questions__buttons-wrapper">
     <button
       class="primary-btn"
       (click)="onLastClick()"
-      [disabled]="lastIndex === 0"
+      [disabled]="lastIndex === -1"
     >
       Anterior
     </button>

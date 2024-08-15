@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Question } from '../../shared/enums/questions';
+import { QuestionsService } from '../../shared/services/questions.service';
 
 @Component({
   selector: 'app-questions',
@@ -8,14 +10,17 @@ import { Component } from '@angular/core';
   styleUrl: './questions.component.scss',
 })
 export class QuestionsComponent {
-  // TODO types
-  questions = [
-    { id: 1, text: 'What can you tell me about yourself?' },
-    { id: 2, text: 'What are the Maine responsibilities in your current job?' },
-    { id: 3, text: 'What are your most relevant skills? ' },
-  ];
-  lastIndex = 0;
+  lastIndex = -1;
   currentIndex = 0;
+  questions: Question[] = [];
+
+  constructor(public questionsService: QuestionsService) {}
+
+  ngOnInit() {
+    this.questionsService.getQuestions().subscribe((response: Question[]) => {
+      this.questions = response;
+    });
+  }
 
   onLastClick() {
     const lastIndexAux = this.lastIndex;
