@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Question } from '../../shared/enums/questions';
 import { QuestionsService } from '../../shared/services/questions.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-questions',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './questions.component.html',
   styleUrl: './questions.component.scss',
 })

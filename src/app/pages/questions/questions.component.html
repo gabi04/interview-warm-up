@@ -6,10 +6,10 @@
       (click)="onLastClick()"
       [disabled]="lastIndex === -1"
     >
-      Anterior
+      {{ "QUESTIONS.PREVIOUS" | translate }}
     </button>
-    <button class="primary-btn" (click)="onNextClick()">Siguiente</button>
+    <button class="primary-btn" (click)="onNextClick()">
+      {{ "QUESTIONS.NEXT" | translate }}
+    </button>
   </div>
 </div>
-
-<!-- TODO fichero de traducciones -->

@@ -4,5 +4,9 @@
     "SUBTITLE": "¡Prepárate para triunfar en tu entrevista!",
     "START": "Empezar",
     "CREATED_BY": "Creado por"
+  },
+  "QUESTIONS": {
+    "PREVIOUS": "Anterior",
+    "NEXT": "Siguiente"
   }
 }

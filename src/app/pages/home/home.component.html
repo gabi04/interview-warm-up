@@ -1,14 +1,14 @@
 <div class="home__wrapper">
-  <h1 class="home__title">Interview Warm Up</h1>
+  <h1 class="home__title">{{ "HOME.TITLE" | translate }}</h1>
 
-  <button class="home__button" [routerLink]="['/questions']">Empezar</button>
+  <button class="home__button" [routerLink]="['/questions']">
+    {{ "HOME.START" | translate }}
+  </button>
 
-  <h2>¡Prepárate para triunfar en tu entrevista!</h2>
+  <h2>{{ "HOME.SUBTITLE" | translate }}</h2>
 
   <h3>
-    Creado por
+    {{ "HOME.CREATED_BY" | translate }}
     <a class="home__link" (click)="onLinkClick()">Gabriela Suárez Carvajal</a>
   </h3>
 </div>
-
-<!-- fichero de traducciones -->
