@@ -1,6 +1,4 @@
 import { Routes } from '@angular/router';
-import { QuestionsComponent } from './pages/questions/questions.component';
-import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
   {
@@ -10,12 +8,14 @@ export const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent,
+    loadComponent: () =>
+      import('./pages/home/home.component').then((x) => x.HomeComponent),
   },
   {
     path: 'questions',
-    component: QuestionsComponent,
+    loadComponent: () =>
+      import('./pages/questions/questions.component').then(
+        (x) => x.QuestionsComponent
+      ),
   },
 ];
-//TODO crear modulo pages
-//TODO lazy loading
